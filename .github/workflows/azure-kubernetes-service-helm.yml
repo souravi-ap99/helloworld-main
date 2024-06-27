@@ -40,10 +40,10 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
-  CONTAINER_NAME: "your-container-name"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
+  GITHUB_CONTAINER_REGISTRY: "ghcr.io"
+  CONTAINER_NAME: "helloworld"
+  RESOURCE_GROUP: "rg_fedex_east_us"
+  CLUSTER_NAME: "PcfToAksMigration"
   CHART_PATH: "your-chart-path"
   CHART_OVERRIDE_PATH: "your-chart-override-path"
 
