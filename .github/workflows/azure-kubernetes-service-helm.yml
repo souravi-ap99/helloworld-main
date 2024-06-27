@@ -44,7 +44,7 @@ env:
   CONTAINER_NAME: "helloworld"
   RESOURCE_GROUP: ""
   CLUSTER_NAME: "PcfToAksMigration"
-  CHART_PATH: "your-chart-path"
+  CHART_PATH: "charts"
   CHART_OVERRIDE_PATH: "your-chart-override-path"
 
 jobs:
