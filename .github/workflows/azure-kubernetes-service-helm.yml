@@ -42,10 +42,10 @@ on:
 env:
   GITHUB_CONTAINER_REGISTRY: "ghcr.io"
   CONTAINER_NAME: "helloworld"
-  RESOURCE_GROUP: ${{ secrets.RESOURCE_ID}}
+  RESOURCE_GROUP: ${{ variables.RESOURCE_ID}}
   CLUSTER_NAME: "PcfToAksMigration"
-  CHART_PATH: "charts"
-  CHART_OVERRIDE_PATH: "your-chart-override-path"
+  CHART_PATH: "charts/Chart.yaml"
+  CHART_OVERRIDE_PATH: "charts/Chart-override.yaml"
 
 jobs:
   buildImage:
