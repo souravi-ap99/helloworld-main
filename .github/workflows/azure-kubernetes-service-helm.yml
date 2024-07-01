@@ -56,8 +56,7 @@ jobs:
     steps:
       # Checks out the repository this file is in
       - uses: actions/checkout@v4
-      -name: Build with Maven
-      run: mvn clean package jib:build -Djib.to.auth.username=souravi-ap99 -Djib.to.auth.password=${{secrets.TOKEN_GIT}} --file pom.xml
+      
 
       # Logs in with your Azure credentials
       - name: Azure login
